@@ -2,7 +2,7 @@ const { send } = require('micro'),
       { promisify } = require('util'),
       fs = require('fs'),
     puppeteer = require('puppeteer');
-
+console.log(process.env)
 const readFile = promisify(fs.readFile);
 module.exports = async (request, response) => {
   try {

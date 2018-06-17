@@ -4,7 +4,8 @@
   "description": "Puppeteer on Glitch",
   "main": "node server.js",
   "scripts": {
-    "start": "micro server.js",
+    "start": "micro server.js micro -l tcp://0.0.0.0:1234",
+    
     "write": "echo hi > ./🤖",
     "postinstall": "npm run write"
   },
