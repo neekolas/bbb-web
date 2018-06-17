@@ -1,24 +1,25 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
-  "private": true,
-  "main": "src/index.tsx",
-  "dependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-scripts-ts": "^2.13.0"
-  },
+  "name": "puppeteer-sample",
+  "version": "0.0.1",
+  "description": "Puppeteer on Glitch",
+  "main": "node server.js",
   "scripts": {
-    "start": "react-scripts-ts start",
-    "build": "react-scripts-ts build",
-    "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject"
+    "start": "micro server.js",
+    "write": "echo hi > ./🤖",
+    "postinstall": "npm run write"
   },
-  "devDependencies": {
-    "@types/jest": "^22.1.3",
-    "@types/node": "^9.4.6",
-    "@types/react": "16.0.38",
-    "@types/react-dom": "16.0.4",
-    "typescript": "^2.7.2"
-  }
+  "dependencies": {
+    "express": "^4.16.3",
+    "puppeteer": "^1.5.0",
+    "micro": "^9.3.2"
+  },
+  "engines": {
+    "node": "9.x"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
 }
